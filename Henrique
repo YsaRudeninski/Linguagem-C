@@ -5,37 +5,36 @@
 int main()
 {
     int senha;
-    
-    
-    while(senha!=1010){
-        printf("\n ##### Arcade Store #####\n\n");
+    printf("\n ##### Arcade Store #####\n\n");
         printf("          Login\n\n");
         printf("    Usuário: Usuário1 \n");
         printf("    Senha:   ");
         scanf("%d",&senha);
         system("clear");
+
+    while(senha!=1010){
+        printf("\n ##### Arcade Store #####\n\n");
+        printf("          Login\n\n");
+        printf("      Senha Incorreta,\n");
+        printf("      Tente novamente \n\n");
+        printf("    Usuário: Usuário1 \n");
+        printf("    Senha:   ");
+        scanf("%d",&senha);
+        system("clear");
     }
-    
-
-    printf("\n ##### Bem vindo ! #####\n");
-    printf("\n        Aguarde  \n\n");
-    sleep(3);
-    system("clear");
-    printf("\n # Usuário1 #\n\n");
-    printf(" ##### Menu #####\n\n");
-    printf(" 1-Loja\n\n");
-    printf(" 2-Biblioteca\n\n");
-    printf(" 3-Conquistas\n\n");
-    printf(" 4-Configurações\n\n\n\n");
-    printf(" Digite o número para a função desejada: \n\n");
-    
-    return 0;
-}
 
 
+    printf("\n ##### Bem vindo ! #####\n"); 
+    printf("\n        Aguarde  \n\n"); 
+    sleep(3); 
+    system("clear"); 
+    printf("\n # Usuário1 #\n\n"); 
+    printf(" ##### Menu #####\n\n"); 
+    printf(" 1-Loja\n\n"); 
+    printf(" 2-Biblioteca\n\n"); 
+    printf(" 3-Conquistas\n\n"); 
+    printf(" 4-Configurações\n\n\n\n"); 
+    printf(" Digite o número para a função desejada: \n\n"); 
 
-
-
-
-
-
+    return 0; 
+} 
