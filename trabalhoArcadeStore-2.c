@@ -6,16 +6,18 @@
 
 int main()
 {
-	//minha variaveis de compra comprar
+	//infos de compra
 	char tipoP ,info [17],validade[7],PIX[50];
 	char comprar;
 	int tentativas = 0;
     int valido = 0;
     int contador;
+	
 	//info dos jogos 
 	double precoJogo;
 	int Comprado [10] = {0};
 	int escolha;
+	
 	//info login
 	char sn;
     char senha[20];  
@@ -23,7 +25,8 @@ int main()
     char senhadigitada[20];
     char logindigitado[20];
     int funcao, logado = 1;
-    //info perfil
+    
+	//info perfil
     char perfilNome[50], perfilDatanasc[20], perfilTelefone[20], perfilEndereco[70];
     int perfilNumEnd;
 	
@@ -40,7 +43,7 @@ int main()
         printf("       *                *\n");
         printf("       ******************\033[m\n\n");
         printf("      1- CADASTRO\n      2- LOGIN\n      0- Finalizar Programa\n\n");
-        printf(" Digite o n˙mero para a funÁ„o desejada: ");
+        printf(" Digite o n√∫mero para a fun√ß√£o desejada: ");
         scanf("%d", &funcao);
         system("cls");
 
@@ -73,13 +76,13 @@ int main()
             	printf("\nTelefone: ");
                 fgets(perfilTelefone, sizeof(perfilTelefone), stdin);
                 
-                printf("\nEndereÁo: ");
+                printf("\nEndere√ßo: ");
                 fgets(perfilEndereco, sizeof(perfilEndereco), stdin);
                 
-                printf("\nN∫ ");
+                printf("\nN¬∫ ");
                 scanf(" %d", &perfilNumEnd);
                 
-                printf("\nUsu·rio: ");
+                printf("\nUsu√°rio: ");
                 getchar();
                 fgets(login,sizeof(login),stdin);
                 login[strcspn(login,"\n")]='\0';
@@ -97,8 +100,8 @@ int main()
                 printf("==============================\n");
                 printf("          CADASTRO\n");
                 printf("==============================\033[m\n\n");
-                printf(" Confirmar Usu·rio e senha?\n\n");
-                printf("    Usu·rio: \033[1;33m%s\033[m  \n", login);
+                printf(" Confirmar Usu√°rio e senha?\n\n");
+                printf("    Usu√°rio: \033[1;33m%s\033[m  \n", login);
                 printf("    Senha:   \033[1;33m%s\033[m ", senha);
                 printf("\n\n Digite \033[1;32m's'\033[m para confirmar");
                 printf("\n ou \033[1;31m'n'\033[m para digitar de novo: ");
@@ -117,7 +120,7 @@ int main()
                         printf("==============================\n");
                         printf("          CADASTRO\n");
                         printf("==============================\033[m\n\n");
-                        printf("    Usu·rio:  ");
+                        printf("    Usu√°rio:  ");
                         getchar();
                         fgets(login,sizeof(login),stdin);
                         login[strcspn(login,"\n")]='\0';
@@ -136,7 +139,7 @@ int main()
                         printf("==============================\n");
                         printf("          CADASTRO\n");
                         printf("==============================\033[m\n\n");
-                        printf(" Confirmar Usu·rio e senha?\n\n");
+                        printf(" Confirmar Usu√°rio e senha?\n\n");
                         printf("    Usuario: \033[1;33m%s\033[m  \n", login);
                         printf("    Senha:   \033[1;33m%s\033[m ", senha);
                         printf("\n\n Digite \033[1;32m's'\033[m para confirmar");
@@ -158,7 +161,7 @@ int main()
                 printf("==============================\n");
                 printf("           LOGIN\n");
                 printf("==============================\033[m\n\n");
-                printf("    Usu·rio:  ");
+                printf("    Usu√°rio:  ");
                 getchar();                 
                 fgets(logindigitado,sizeof(logindigitado),stdin);                 
                 logindigitado[strcspn(logindigitado,"\n")]='\0';
@@ -179,7 +182,7 @@ int main()
                         printf("           LOGIN\n");
                         printf("==============================\033[m\n\n");
                         printf("\n \033[0;91mLOGIN ou SENHA incorretos.\n     Tente novamente.\033[m\n");
-                        printf("\n\n    usu·rio: ");
+                        printf("\n\n    usu√°rio: ");
                         getchar();                 
                         fgets(logindigitado,sizeof(logindigitado),stdin);                 
                         logindigitado[strcspn(logindigitado,"\n")]='\0';
@@ -208,7 +211,7 @@ int main()
 	                        printf("==============================\n");
 	                        printf("           CADASTRO\n");
 	                        printf("==============================\033[m\n\n");
-                            printf("    Usu·rio: ");
+                            printf("    Usu√°rio: ");
                             getchar();
                             fgets(login,sizeof(login),stdin);
                             login[strcspn(login,"\n")]='\0';
@@ -226,8 +229,8 @@ int main()
 							printf("==============================\n");
 	                        printf("           CADASTRO\n");
 	                        printf("==============================\033[m\n\n");
-                            printf(" Confirmar usu·rio e Senha?\n\n");
-                            printf("    Usu·rio: \033[1;33m%s\033[m  \n", login);
+                            printf(" Confirmar usu√°rio e Senha?\n\n");
+                            printf("    Usu√°rio: \033[1;33m%s\033[m  \n", login);
                             printf("    Senha:   \033[1;33m%s\033[m ", senha);
                             printf("\n\n Digite \033[1;32m's'\033[m para confirmar");
                             printf("\n ou \033[1;31m'n'\033[m para digitar de novo: ");
@@ -273,79 +276,79 @@ while (continua == 's' || continua == 'S')
 		printf("\n[3] Perfil");
 		printf("\n[4] Sair");
 
-		printf("\n\nPara onde vocÍ dejesa ir? ");
+		printf("\n\nPara onde voc√™ dejesa ir? ");
 		scanf(" %d", &menu);
 
 		switch (menu){
 			case 1:
 			system("cls");
-			// CabeÁalho
+			// Cabe√ßalho
 			printf("\033[36m------------------------------------------------------------------------------------------------------------------------\033[0m\n");
-			printf("\033[1;37m                                  \003Bem-vindo ao cat·logo da Arcade Store!\003\033[0m\n");
+			printf("\033[1;37m                                  \003Bem-vindo ao cat√°logo da Arcade Store!\003\033[0m\n");
 			printf("\033[36m------------------------------------------------------------------------------------------------------------------------\033[0m\n");
 
-			// Cat·logo dos jogos
-			printf("\n\033[33m1. Nome : \033[0mGod of War Ragnarok\n\033[32m  preÁo: R$ 299.90");
+			// Cat√°logo dos jogos
+			printf("\n\033[33m1. Nome : \033[0mGod of War Ragnarok\n\033[32m  pre√ßo: R$ 299.90");
 			if (Comprado[0] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m2. Nome : \033[0mThe Last of Us Part II\n\033[32m   preÁo: R$ 249.90");
+			printf("\n\033[33m2. Nome : \033[0mThe Last of Us Part II\n\033[32m   pre√ßo: R$ 249.90");
 			if (Comprado[1] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m3. Nome : \033[0mElden Ring\n\033[32m   preÁo: R$ 279.99");
+			printf("\n\033[33m3. Nome : \033[0mElden Ring\n\033[32m   pre√ßo: R$ 279.99");
 			if (Comprado[2] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m4. Nome : \033[0mRed Dead Redemption 2\n\033[32m   preÁo: R$ 199.90");
+			printf("\n\033[33m4. Nome : \033[0mRed Dead Redemption 2\n\033[32m   pre√ßo: R$ 199.90");
 			if (Comprado[3] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m5. Nome : \033[0mCyberpunk 2077\n\033[32m   preÁo: R$ 149.90");
+			printf("\n\033[33m5. Nome : \033[0mCyberpunk 2077\n\033[32m   pre√ßo: R$ 149.90");
 			if (Comprado[4] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m6. Nome : \033[0mHogwarts Legacy\n\033[32m   preÁo: R$ 299.90");
+			printf("\n\033[33m6. Nome : \033[0mHogwarts Legacy\n\033[32m   pre√ßo: R$ 299.90");
 			if (Comprado[5] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m7. Nome : \033[0mMinecraft\n\033[32m   preÁo: R$ 99.90");
+			printf("\n\033[33m7. Nome : \033[0mMinecraft\n\033[32m   pre√ßo: R$ 99.90");
 			if (Comprado[6] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m8. Nome : \033[0mFIFA 25\n\033[32m   preÁo: R$ 349.90");
+			printf("\n\033[33m8. Nome : \033[0mFIFA 25\n\033[32m   pre√ßo: R$ 349.90");
 			if (Comprado[7] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m9. Nome : \033[0mGTA V\n\033[32m   preÁo: R$ 79.90");
+			printf("\n\033[33m9. Nome : \033[0mGTA V\n\033[32m   pre√ßo: R$ 79.90");
 			if (Comprado[8] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[33m10. Nome: \033[0mAssassin's Creed Mirage\n\033[32m    preÁo: R$ 229.90");
+			printf("\n\033[33m10. Nome: \033[0mAssassin's Creed Mirage\n\033[32m    pre√ßo: R$ 229.90");
 			if (Comprado[9] == 1)
 			{
 				printf(" \033[1;32m[comprado]\033[0m\n");
 			}
 
-			printf("\n\033[35mDigite o n˙mero do jogo para mais informaÁıes ou '0' para voltar ao menu: \033[0m");
+			printf("\n\033[35mDigite o n√∫mero do jogo para mais informa√ß√µes ou '0' para voltar ao menu: \033[0m");
 			scanf("%d", &escolha);
 			system("cls");
 				
@@ -359,21 +362,21 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                     God of War Ragnarok                    |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: AÁ„o, Aventura\n");
+				printf("G√™nero: A√ß√£o, Aventura\n");
 			    printf("\033[1mDesenvolvedora:\033[0m Santa Monica Studio\n");
-			    printf("Ano de LanÁamento: 2022\n");
-			    printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 18+\n");
+			    printf("Ano de Lan√ßamento: 2022\n");
+			    printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 18+\n");
 			    printf("Modo de Jogo: Singleplayer\n");
 			    printf("Idiomas: PT-BR, EN, ES e mais\n");
 			    printf("Campanha: \033[1m25 a 40 horas\033[0m\n");
-			    printf("\033[33mAvaliaÁ„o: 94/100\033[0m (Metacritic)\n");
-			    printf("\033[1mDescriÁ„o:\033[0m Kratos e Atreus enfrentam deuses nÛrdicos em meio ao fim do mundo.\n");
+			    printf("\033[33mAvalia√ß√£o: 94/100\033[0m (Metacritic)\n");
+			    printf("\033[1mDescri√ß√£o:\033[0m Kratos e Atreus enfrentam deuses n√≥rdicos em meio ao fim do mundo.\n");
 			    printf("\033[1;32mComprar por R$299.90\033[0m\n");
 			    printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 				
 			}
 			else {
-					printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -386,20 +389,20 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                   The Last of Us Part II                   |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: AÁ„o, Aventura, SobrevivÍncia\n");
+				printf("G√™nero: A√ß√£o, Aventura, Sobreviv√™ncia\n");
 				printf("\033[1mDesenvolvedora:\033[0m Naughty Dog\n");
-				printf("Ano de LanÁamento: 2020\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 18+\n");
+				printf("Ano de Lan√ßamento: 2020\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 18+\n");
 				printf("Modo de Jogo: Singleplayer\n");
 				printf("Idiomas: PT-BR, EN e outros\n");
 				printf("Campanha: \033[1m25 a 35 horas\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 93/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m Uma histÛria intensa de vinganÁa e sobrevivÍncia em um mundo devastado.\n");
+				printf("\033[33mAvalia√ß√£o: 93/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Uma hist√≥ria intensa de vingan√ßa e sobreviv√™ncia em um mundo devastado.\n");
 				printf("\033[1;32mComprar por R$249.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
 			
-					printf("\033[1;32mO jogo  j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo  j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -412,19 +415,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                         Elden Ring                         |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: AÁ„o, RPG\n");
+				printf("G√™nero: A√ß√£o, RPG\n");
 				printf("\033[1mDesenvolvedora:\033[0m FromSoftware\n");
-				printf("Ano de LanÁamento: 2022\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 16+\n");
+				printf("Ano de Lan√ßamento: 2022\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 16+\n");
 				printf("Modo de Jogo: Singleplayer, Coop Online\n");
 				printf("Idiomas: Legendas PT-BR e outros\n");
 				printf("Campanha: \033[1m50 a 100 horas\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 96/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m Um mundo de fantasia com liberdade total e desafios brutais.\n");
+				printf("\033[33mAvalia√ß√£o: 96/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Um mundo de fantasia com liberdade total e desafios brutais.\n");
 				printf("\033[1;32mComprar por R$279.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
-					printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -437,19 +440,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                  Red Dead Redemption 2                     |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: AÁ„o, Aventura, Faroeste\n");
+				printf("G√™nero: A√ß√£o, Aventura, Faroeste\n");
 				printf("\033[1mDesenvolvedora:\033[0m Rockstar Games\n");
-				printf("Ano de LanÁamento: 2018\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 18+\n");
+				printf("Ano de Lan√ßamento: 2018\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 18+\n");
 				printf("Modo de Jogo: Singleplayer, Multiplayer Online\n");
 				printf("Idiomas: Legendas PT-BR e outros\n");
 				printf("Campanha: \033[1m50 a 80 horas\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 97/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m A histÛria de um fora-da-lei em um mundo imersivo do Velho Oeste.\n");
+				printf("\033[33mAvalia√ß√£o: 97/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m A hist√≥ria de um fora-da-lei em um mundo imersivo do Velho Oeste.\n");
 				printf("\033[1;32mComprar por R$199.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");			
 			}else{
-					printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -462,19 +465,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                       Cyberpunk 2077                       |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: AÁ„o, RPG, Futurista\n");
+				printf("G√™nero: A√ß√£o, RPG, Futurista\n");
 				printf("\033[1mDesenvolvedora:\033[0m CD Projekt Red\n");
-				printf("Ano de LanÁamento: 2020 (atualizado em 2023)\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 18+\n");
+				printf("Ano de Lan√ßamento: 2020 (atualizado em 2023)\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 18+\n");
 				printf("Modo de Jogo: Singleplayer\n");
-				printf("Idiomas: ¡udio/Legenda PT-BR e outros\n");
+				printf("Idiomas: √Åudio/Legenda PT-BR e outros\n");
 				printf("Campanha: \033[1m30 a 60 horas\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 80/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m Viva como um mercen·rio cibernÈtico numa cidade futurista.\n");
+				printf("\033[33mAvalia√ß√£o: 80/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Viva como um mercen√°rio cibern√©tico numa cidade futurista.\n");
 				printf("\033[1;32mComprar por R$149.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
-					printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -487,19 +490,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                     Hogwarts Legacy                        |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: Aventura, RPG, Magia\n");
+				printf("G√™nero: Aventura, RPG, Magia\n");
 				printf("\033[1mDesenvolvedora:\033[0m Portkey Games\n");
-				printf("Ano de LanÁamento: 2023\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 12+\n");
+				printf("Ano de Lan√ßamento: 2023\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 12+\n");
 				printf("Modo de Jogo: Singleplayer\n");
-				printf("Idiomas: ¡udio/Legenda PT-BR e outros\n");
+				printf("Idiomas: √Åudio/Legenda PT-BR e outros\n");
 				printf("Campanha: \033[1m30 a 50 horas\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 84/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m Explore Hogwarts no sÈculo XIX como um aluno especial.\n");
+				printf("\033[33mAvalia√ß√£o: 84/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Explore Hogwarts no s√©culo XIX como um aluno especial.\n");
 				printf("\033[1;32mComprar por R$299.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
-					printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -512,19 +515,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                          Minecraft                         |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: Aventura, Criativo, SobrevivÍncia\n");
+				printf("G√™nero: Aventura, Criativo, Sobreviv√™ncia\n");
 				printf("\033[1mDesenvolvedora:\033[0m Mojang Studios\n");
-				printf("Ano de LanÁamento: 2011\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m Livre\n");
+				printf("Ano de Lan√ßamento: 2011\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m Livre\n");
 				printf("Modo de Jogo: Singleplayer, Multiplayer\n");
 				printf("Idiomas: PT-BR, EN e outros\n");
 				printf("Campanha: \033[1mInfinita (sandbox)\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 93/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m Construa, explore e sobreviva com criatividade ilimitada.\n");
+				printf("\033[33mAvalia√ß√£o: 93/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Construa, explore e sobreviva com criatividade ilimitada.\n");
 				printf("\033[1;32mComprar por R$99.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
-					printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -537,19 +540,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                          FIFA 25                           |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: Esportes, Futebol\n");
+				printf("G√™nero: Esportes, Futebol\n");
 				printf("\033[1mDesenvolvedora:\033[0m EA Sports\n");
-				printf("Ano de LanÁamento: 2024\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m Livre\n");
+				printf("Ano de Lan√ßamento: 2024\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m Livre\n");
 				printf("Modo de Jogo: Singleplayer, Multiplayer\n");
-				printf("Idiomas: ¡udio/Legenda PT-BR e outros\n");
+				printf("Idiomas: √Åudio/Legenda PT-BR e outros\n");
 				printf("Campanha: \033[1mInfinita (partidas e temporadas)\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 78/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m Jogue com realismo total nos modos Ultimate Team e Carreira.\n");
+				printf("\033[33mAvalia√ß√£o: 78/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Jogue com realismo total nos modos Ultimate Team e Carreira.\n");
 				printf("\033[1;32mComprar por R$349.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
-					printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+					printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 				    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 				    sleep(3); 
 				continue;
@@ -562,19 +565,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                    Grand Theft Auto V                      |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: AÁ„o, Aventura, Mundo Aberto\n");
+				printf("G√™nero: A√ß√£o, Aventura, Mundo Aberto\n");
 				printf("\033[1mDesenvolvedora:\033[0m Rockstar Games\n");
-				printf("Ano de LanÁamento: 2013\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 18+\n");
+				printf("Ano de Lan√ßamento: 2013\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 18+\n");
 				printf("Modo de Jogo: Singleplayer, Multiplayer\n");
 				printf("Idiomas: Legendas PT-BR e outros\n");
 				printf("Campanha: \033[1m30 a 40 horas\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 96/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m TrÍs criminosos em Los Santos numa trama cheia de aÁ„o.\n");
+				printf("\033[33mAvalia√ß√£o: 96/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Tr√™s criminosos em Los Santos numa trama cheia de a√ß√£o.\n");
 				printf("\033[1;32mComprar por R$79.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
-				printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+				printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
 			    printf("\033[1;34mVoltando ao menu...\033[0m\n");    
 			    sleep(3); 
 				continue;
@@ -587,19 +590,19 @@ while (continua == 's' || continua == 'S')
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
 				printf("\033[36;1m|                Assassin's Creed Mirage                     |\033[0m\n");
 				printf("\033[36;1m+-------------------------------------------------------------+\033[0m\n");
-				printf("GÍnero: AÁ„o, Aventura, Stealth\n");
+				printf("G√™nero: A√ß√£o, Aventura, Stealth\n");
 				printf("\033[1mDesenvolvedora:\033[0m Ubisoft\n");
-				printf("Ano de LanÁamento: 2023\n");
-				printf("\033[1;31mClassificaÁ„o Indicativa:\033[0m 16+\n");
+				printf("Ano de Lan√ßamento: 2023\n");
+				printf("\033[1;31mClassifica√ß√£o Indicativa:\033[0m 16+\n");
 				printf("Modo de Jogo: Singleplayer\n");
-				printf("Idiomas: ¡udio/Legenda PT-BR e outros\n");
+				printf("Idiomas: √Åudio/Legenda PT-BR e outros\n");
 				printf("Campanha: \033[1m20 a 25 horas\033[0m\n");
-				printf("\033[33mAvaliaÁ„o: 81/100\033[0m (Metacritic)\n");
-				printf("\033[1mDescriÁ„o:\033[0m Uma volta ‡s origens da franquia com furtividade e assassinatos.\n");
+				printf("\033[33mAvalia√ß√£o: 81/100\033[0m (Metacritic)\n");
+				printf("\033[1mDescri√ß√£o:\033[0m Uma volta √†s origens da franquia com furtividade e assassinatos.\n");
 				printf("\033[1;32mComprar por R$229.90\033[0m\n");
 				printf("\033[1mDigite C para pagar OU M para voltar ao menu!\033[0m\n\n");
 			}else{
-				printf("\033[1;32mO jogo j· foi comprado.\033[0m\n"); 
+				printf("\033[1;32mO jogo j√° foi comprado.\033[0m\n"); 
    				printf("\033[1;34mVoltando ao menu...\033[0m\n");    
     			sleep(3); 
 				continue;
@@ -612,7 +615,7 @@ while (continua == 's' || continua == 'S')
 				break;
 			default:
 
-				printf("OpÁ„o inv·lida. Tente novamente!\n");
+				printf("Op√ß√£o inv√°lida. Tente novamente!\n");
 				
 				}
 				
@@ -627,23 +630,23 @@ while (continua == 's' || continua == 'S')
 
 				printf("Falta pouco para voce adquirir seu NOVO JOGO!\n\n");
 				printf("Informe o tipo de pagamento desejado:\n\n");
-				printf("  [C] Cart„o de credito\n");
-				printf("  [D] Cart„o de dÈbito\n");
+				printf("  [C] Cart√£o de credito\n");
+				printf("  [D] Cart√£o de d√©bito\n");
 				printf("  [P] Pix\n");
 				printf("  [M] Voltar ao menu\n\n");
-				printf("Digite a opÁ„o correspondente: ");
+				printf("Digite a op√ß√£o correspondente: ");
 				getchar();
 				scanf(" %c", &tipoP);
 				
-				//Pagamento em CrÈdito
+				//Pagamento em Cr√©dito
 if (tipoP == 'C' || tipoP == 'c') {
 	tentativas = 0;
 	valido = 0;
 					
-    printf("\033[1;33m\n--- Pagamento por Cart„o de crÈdito ---\n\033[0m");
+    printf("\033[1;33m\n--- Pagamento por Cart√£o de cr√©dito ---\n\033[0m");
 
     while (tentativas < 3) {
-        printf("Digite o \033[1m N˙mero do seu Cart„o (16 digitos): \033[0m");
+        printf("Digite o \033[1m N√∫mero do seu Cart√£o (16 digitos): \033[0m");
         scanf(" %16s", info);
         fflush(stdin);
 
@@ -654,18 +657,18 @@ if (tipoP == 'C' || tipoP == 'c') {
             valido = 1;
             break;
         } else {
-            printf("\033[1;31m\nN˙mero do cart„o ou data invalido! Tentativa %d de 3.\n\033[0m", tentativas + 1);
+            printf("\033[1;31m\nN√∫mero do cart√£o ou data invalido! Tentativa %d de 3.\n\033[0m", tentativas + 1);
             tentativas++;
         }
     }
 
     if (valido == 0) {
-        printf("\nN˙mero de tentativas excedido. Cancelando pagamento e voltando ao menu...\n");
+        printf("\nN√∫mero de tentativas excedido. Cancelando pagamento e voltando ao menu...\n");
         sleep(5);
         continue;
         break;
           } else{
-        printf("Validando seu cart„o");
+        printf("Validando seu cart√£o");
         fflush(stdout);
         for (contador= 0; contador < 3; contador++) {
             sleep(1);
@@ -686,15 +689,15 @@ if (tipoP == 'C' || tipoP == 'c') {
     }
 }
 
-				// Pagamento por DÈbito
+				// Pagamento por D√©bito
 if (tipoP == 'D' || tipoP == 'd') {
 	tentativas = 0;
 	valido = 0;
 					
-    printf("\033[1;33m\n--- Pagamento por Cart„o de dÈbito ---\n\033[0m");
+    printf("\033[1;33m\n--- Pagamento por Cart√£o de d√©bito ---\n\033[0m");
 
     while (tentativas < 3) {
-        printf("Digite o \033[1m N˙mero do seu cart„o (16 Digitos): \033[0m");
+        printf("Digite o \033[1m N√∫mero do seu cart√£o (16 Digitos): \033[0m");
         scanf(" %16s", info);
         fflush(stdin);
 
@@ -705,18 +708,18 @@ if (tipoP == 'D' || tipoP == 'd') {
             valido = 1;
             break;
         } else {
-            printf("\033[1;31m\nN˙mero do cart„o ou data invalido! Tentativa %d de 3.\n\033[0m", tentativas + 1);
+            printf("\033[1;31m\nN√∫mero do cart√£o ou data invalido! Tentativa %d de 3.\n\033[0m", tentativas + 1);
             tentativas++;
         }
     }
 
     if (valido == 0) {
-        printf("\nN˙mero de tentativas excedido. Cancelando pagamento e voltando ao menu...\n");
+        printf("\nN√∫mero de tentativas excedido. Cancelando pagamento e voltando ao menu...\n");
         sleep(5);
         continue;
         break;
           } else{
-        printf("Validando seu cart„o");
+        printf("Validando seu cart√£o");
         fflush(stdout);
         for (contador= 0; contador < 3; contador++) {
             sleep(1);
@@ -769,7 +772,7 @@ if (tipoP == 'D' || tipoP == 'd') {
 					continue;
 					break;
 				}else	{
-					printf("\033[1;31m\nOpÁ„o inv·lida!\n\033[0m");
+					printf("\033[1;31m\nOp√ß√£o inv√°lida!\n\033[0m");
 				}
 				
 	}else if (comprar == 'm' || comprar == 'M'){
@@ -844,12 +847,12 @@ if (Comprado[9] == 1)
 			printf("==================================================\n");
 			printf("                >>> PERFIL <<<           \n");
 			printf("==================================================\n\n");
-			printf("Nome de usu·rio: %s\n\n", login);
+			printf("Nome de usu√°rio: %s\n\n", login);
         	printf("Nome: %s\n", perfilNome);
         	printf("Data de nascimento: %s\n", perfilDatanasc);
         	printf("Telefone: %s\n", perfilTelefone);
-        	printf("EndereÁo: %s", perfilEndereco);
-        	printf("N∫%d\n", perfilNumEnd);
+        	printf("Endere√ßo: %s", perfilEndereco);
+        	printf("N¬∫%d\n", perfilNumEnd);
             printf("Conquistas: 0\n\n");
             printf("Amigos: 0\n\n\n");
 			break;
@@ -860,7 +863,7 @@ if (Comprado[9] == 1)
 			return 0;
 			
 		default:
-			printf("OpÁ„o inv·lida!\n");
+			printf("Op√ß√£o inv√°lida!\n");
 		}
 		printf("Deseja voltar ao menu?(s/n)");
 		scanf(" %c", &continua);
